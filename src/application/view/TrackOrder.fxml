@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.TrackOrderController">
+   <children>
+      <TextField fx:id="orderIDField" layoutX="48.0" layoutY="120.0" onAction="#trackOrderAction" prefHeight="30.0" prefWidth="300.0" promptText="最多可同时查询5条订单号，请以空格隔开">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Button layoutX="48.0" layoutY="400.0" mnemonicParsing="false" onAction="#trackOrderAction" prefWidth="100.0" text="查询">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="48.0" layoutY="27.0" prefHeight="69.0" prefWidth="125.0" text="订单查询">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="resultTable" layoutX="66.0" layoutY="166.0" prefHeight="200.0" prefWidth="369.0">
+        <columns>
+          <TableColumn fx:id="orderIDColumn" prefWidth="75.0" text="订单号" />
+          <TableColumn fx:id="locationColumn" prefWidth="94.0" text="当前所在地" />
+            <TableColumn fx:id="orderStateColumn" prefWidth="74.0" text="当前状态" />
+            <TableColumn fx:id="surveyTimeColumn" prefWidth="125.0" text="检视时间" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.UserFeedBackController">
+   <children>
+      <Label layoutX="28.0" layoutY="37.0" text="订单号" />
+      <TextField fx:id="orderIDTextField" layoutX="98.0" layoutY="32.0" promptText="请输入订单号" />
+      <ChoiceBox fx:id="feedBackTypeChoiceBox" layoutX="99.0" layoutY="83.0" prefWidth="150.0" />
+      <Label layoutX="43.0" layoutY="88.0" text="类型" />
+      <Label layoutX="21.0" layoutY="203.0" text="反馈内容" />
+      <TextArea fx:id="feedBackContentTextArea" layoutX="100.0" layoutY="213.0" prefHeight="200.0" prefWidth="300.0" promptText="请输入反馈内容" />
+      <Button layoutX="199.0" layoutY="449.0" mnemonicParsing="false" onAction="#submitController" prefHeight="30.0" prefWidth="81.0" text="提交" />
+      <Label layoutX="21.0" layoutY="146.0" text="反馈主题" />
+      <TextField fx:id="feedBackThemeTextField" layoutX="98.0" layoutY="141.0" promptText="请输入反馈主题" />
+   </children>
+</AnchorPane>

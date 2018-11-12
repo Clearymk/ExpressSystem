@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="364.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" text="关于该项目">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="87.0" prefHeight="75.0" prefWidth="300.0" text="该项目是数据库的课程设计，用JavaFX实现的一个简单的快递系统。该系统使用mysql来存储数据。" textOverrun="CLIP" wrapText="true" />
+      <Label layoutX="20.0" layoutY="176.0" prefHeight="27.0" prefWidth="169.0" text="如果有建议可以联系我。" wrapText="true" />
+      <Label layoutX="19.0" layoutY="240.0" prefHeight="40.0" prefWidth="76.0" text="小组成员：" wrapText="true" />
+      <Label layoutX="60.0" layoutY="270.0" text="杨明可" />
+      <Label layoutX="114.0" layoutY="270.0" text="李毅" />
+      <Label layoutX="154.0" layoutY="270.0" text="任星" />
+      <Label layoutX="60.0" layoutY="299.0" text="吴宇翔" />
+      <Label layoutX="114.0" layoutY="299.0" text="罗涵宇" />
+      <Label layoutX="20.0" layoutY="203.0" text="联系邮箱yang.mingke@outlook.com" />
+   </children>
+</AnchorPane>

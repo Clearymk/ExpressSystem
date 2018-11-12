@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.DriverTaskController">
+   <children>
+      <TableView fx:id="taskTable" layoutX="24.0" layoutY="31.0" prefHeight="455.0" prefWidth="453.0">
+        <columns>
+          <TableColumn fx:id="orderIDTableColumn" prefWidth="86.0" text="订单号" />
+          <TableColumn fx:id="conveyanceIDTableColumn" prefWidth="102.0" text="交通工具号" />
+            <TableColumn fx:id="startAddressColumn" prefWidth="93.0" text="出发地" />
+            <TableColumn fx:id="targeAddressColumn" prefWidth="89.0" text="目的地" />
+            <TableColumn fx:id="dispatchCenterIDColumn" prefWidth="129.0" text="调度中心" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

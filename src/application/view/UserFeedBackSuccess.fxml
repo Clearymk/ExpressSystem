@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.UserFeedBackSuccessController">
+   <children>
+      <Label layoutX="107.0" layoutY="40.0" text="反馈成功!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="87.0" prefHeight="51.0" prefWidth="240.0" text="收到了您的反馈，我们会不断改进。感谢您的支持" wrapText="true" />
+      <Button layoutX="118.0" layoutY="157.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="65.0" text="确认" />
+   </children>
+</AnchorPane>

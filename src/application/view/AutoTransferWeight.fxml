@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.AutoTransferWeightController">
+	<children>
+		<Label layoutX="120.0" layoutY="14.0" text="计算重量" />
+		<Label layoutX="24.0" layoutY="48.0" text="长：" />
+		<Label layoutX="24.0" layoutY="90.0" text="宽：" />
+		<Label layoutX="24.0" layoutY="135.0" text="高：" />
+		<TextField fx:id="lengthField" layoutX="64.0" layoutY="43.0"
+			prefHeight="30.0" prefWidth="204.0" promptText="请输入物品长度(单位：cm)">
+			<cursor>
+				<Cursor fx:constant="TEXT" />
+			</cursor>
+		</TextField>
+		<TextField fx:id="widthField" layoutX="65.0" layoutY="85.0"
+			prefHeight="30.0" prefWidth="204.0" promptText="请输入物品宽度(单位：cm)">
+			<cursor>
+				<Cursor fx:constant="TEXT" />
+			</cursor>
+		</TextField>
+		<TextField fx:id="heightField" layoutX="65.0" layoutY="130.0"
+			prefHeight="30.0" prefWidth="204.0" promptText="请输入物品高度(单位：cm)">
+			<cursor>
+				<Cursor fx:constant="TEXT" />
+			</cursor>
+		</TextField>
+		<Button layoutX="125.0" layoutY="256.0" mnemonicParsing="false"
+			onMouseClicked="#clickTOTransferWeight" text="查询">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Text layoutX="25.0" layoutY="197.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="注：根据业内规定，体积重量的计算公式为长*宽*高/6000，单位为厘米"
+			wrappingWidth="250.0">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Text>
+		<HBox layoutX="83.0" layoutY="227.0" prefHeight="20.0" prefWidth="185.0">
+			<children>
+				<Label prefHeight="20.0" prefWidth="60.0" text="重量为:">
+					<HBox.margin>
+						<Insets right="5.0" />
+					</HBox.margin>
+				</Label>
+				<Label fx:id="weightLabel" prefHeight="20.0" prefWidth="66.0"
+					text="0" textAlignment="CENTER">
+					<HBox.margin>
+						<Insets left="10.0" right="10.0" />
+					</HBox.margin>
+				</Label>
+				<Label text="KG">
+					<HBox.margin>
+						<Insets />
+					</HBox.margin>
+				</Label>
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>

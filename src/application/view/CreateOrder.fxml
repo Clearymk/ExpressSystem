@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="539.0" prefWidth="536.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.CreateOrderController">
+   <children>
+      <Separator layoutY="274.0" prefHeight="3.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="274.0" />
+      <Label layoutX="388.0" layoutY="123.0" text="区" />
+      <TextField fx:id="senderAreaTextField" layoutX="282.0" layoutY="118.0" prefHeight="30.0" prefWidth="100.0" promptText="所在地区" />
+      <Label layoutX="255.0" layoutY="123.0" text="市" />
+      <TextField fx:id="senderCityTextField" layoutX="181.0" layoutY="118.0" prefHeight="30.0" prefWidth="67.0" promptText="所在市" />
+      <Label layoutX="158.0" layoutY="123.0" text="省" />
+      <TextField fx:id="senderProvinceTextField" layoutX="80.0" layoutY="118.0" prefHeight="30.0" prefWidth="67.0" promptText="所在省" />
+      <Label layoutX="6.0" layoutY="123.0" text="上门地址" />
+      <TextField fx:id="senderAddressTextField" layoutX="80.0" layoutY="186.0" prefHeight="30.0" prefWidth="258.0" promptText="填写所在街道以及详细地址" />
+      <Label layoutX="6.0" layoutY="191.0" text="详细地址" />
+      <Label layoutX="10.0" layoutY="49.0" text="姓     名" />
+      <TextField fx:id="senderUsernameTextField" layoutX="80.0" layoutY="44.0" prefHeight="30.0" prefWidth="155.0" promptText="请填联系人姓名" />
+      <Label layoutX="244.0" layoutY="49.0" text="手    机" />
+      <TextField fx:id="senderUserPhoneNumberTextField" layoutX="313.0" layoutY="44.0" prefHeight="30.0" prefWidth="180.0" promptText="请填手机号码" />
+      <Label prefHeight="50.0" prefWidth="100.0" text="寄件人信息">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1.0" layoutY="276.0" prefHeight="50.0" prefWidth="100.0" text="收件人信息">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="recipientUserPhoneNumberTextField" layoutX="327.0" layoutY="327.0" prefHeight="30.0" prefWidth="180.0" promptText="请填手机号码" />
+      <Label layoutX="245.0" layoutY="332.0" text="手    机" />
+      <TextField fx:id="recipientUsernameTextField" layoutX="70.0" layoutY="327.0" prefHeight="30.0" prefWidth="155.0" promptText="请填联系人姓名" />
+      <Label layoutX="10.0" layoutY="332.0" text="姓     名" />
+      <Label layoutX="396.0" layoutY="387.0" text="区" />
+      <TextField fx:id="recipientAreaTextField" layoutX="288.0" layoutY="382.0" prefHeight="30.0" prefWidth="100.0" promptText="所在地区" />
+      <Label layoutX="264.0" layoutY="387.0" text="市" />
+      <TextField fx:id="recipientCityTextField" layoutX="185.0" layoutY="382.0" prefHeight="30.0" prefWidth="67.0" promptText="所在市" />
+      <Label layoutX="158.0" layoutY="387.0" text="省" />
+      <TextField fx:id="recipientProvinceTextField" layoutX="70.0" layoutY="382.0" prefHeight="30.0" prefWidth="67.0" promptText="所在省" />
+      <Label layoutX="7.0" layoutY="387.0" text="上门地址" />
+      <TextField fx:id="recipientAddressTextField" layoutX="70.0" layoutY="443.0" prefHeight="30.0" prefWidth="258.0" promptText="填写所在街道以及详细地址" />
+      <Label layoutX="7.0" layoutY="448.0" text="详细地址" />
+      <Button layoutX="247.0" layoutY="495.0" mnemonicParsing="false" onAction="#successAlter" text="下单" />
+   </children>
+</AnchorPane>

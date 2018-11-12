@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.UserLoginController">
+	<children>
+		<Label layoutX="238.0" layoutY="35.0" text="用户登录">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<HBox layoutX="117.0" layoutY="110.0" prefHeight="20.0" prefWidth="318.0">
+			<children>
+				<Label text="用户名：">
+					<HBox.margin>
+						<Insets top="5.0" />
+					</HBox.margin>
+				</Label>
+				<TextField fx:id="usernameField" onAction="#loginAction" promptText="请输入用户名或邮箱地址">
+					<HBox.margin>
+						<Insets left="10.0" />
+					</HBox.margin>
+					<cursor>
+						<Cursor fx:constant="TEXT" />
+					</cursor>
+				</TextField>
+			</children>
+		</HBox>
+		<HBox layoutX="119.0" layoutY="179.0" prefHeight="20.0" prefWidth="318.0">
+			<children>
+				<Label text="密   码：">
+					<HBox.margin>
+						<Insets top="5.0" />
+					</HBox.margin>
+				</Label>
+				<PasswordField fx:id="passwordField" onAction="#loginAction" promptText="请输入密码">
+					<HBox.margin>
+						<Insets left="10.0" />
+					</HBox.margin>
+					<cursor>
+						<Cursor fx:constant="TEXT" />
+					</cursor>
+				</PasswordField>
+			</children>
+		</HBox>
+		<Button fx:id="loginButton" layoutX="238.0" layoutY="263.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="30.0" prefWidth="80.0" text="登录">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Label layoutX="381.0" layoutY="416.0" text="数据库课程设计" />
+      <Label layoutX="366.0" layoutY="355.0" onMousePressed="#registerAction" text="没有账户？去注册">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+	</children>
+</AnchorPane>

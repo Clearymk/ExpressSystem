@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.NotificationPickupController">
+	<children>
+		<TableView fx:id="resultTable" layoutX="-61.0" prefHeight="500.0" prefWidth="734.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<columns>
+				<TableColumn fx:id="orderIDColumn" prefWidth="75.0" text="订单编号" />
+				<TableColumn fx:id="senderNameColumn" prefWidth="101.0" text="寄件人姓名" />
+				<TableColumn fx:id="senderPhoneNumberColumn" prefWidth="121.0" text="寄件人电话号码" />
+				<TableColumn fx:id="recipientNameColumn" prefWidth="118.0" text="收件人姓名" />
+				<TableColumn fx:id="recipientPhoneNumberColumn" minWidth="0.0" prefWidth="142.0" text="收件人电话号码" />
+				<TableColumn fx:id="senderAddressColumn" minWidth="2.0" prefWidth="81.0" text="发件地址" />
+				<TableColumn fx:id="recipientAddressColumn" prefWidth="101.0" text="寄件地址" />
+			</columns>
+		</TableView>
+	</children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.error-text,.emit-err-text{
+    -fx-font-size:12.0px;
+    -fx-font-weight:bold;
+    -fx-text-fill:red;
+    -fx-font-family:"Microsoft YaHei";
+}

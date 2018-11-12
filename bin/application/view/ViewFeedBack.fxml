@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="417.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.ViewFeedBackController">
+   <children>
+      <Label layoutX="37.0" layoutY="24.0" text="订单号" />
+      <TextField fx:id="orderIDTextField" layoutX="99.0" layoutY="19.0" />
+      <TextField fx:id="warehouseIDTextField" layoutX="99.0" layoutY="66.0" />
+      <TextField fx:id="orderStateField" layoutX="99.0" layoutY="116.0" />
+      <Label layoutX="37.0" layoutY="71.0" text="仓库号" />
+      <Label layoutX="29.0" layoutY="121.0" text="订单状态" />
+      <Label layoutX="45.0" layoutY="171.0" text="备注" />
+      <Button layoutX="166.0" layoutY="308.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="30.0" prefWidth="60.0" text="提交" />
+      <TextArea fx:id="remarkTextArea" layoutX="95.0" layoutY="171.0" prefHeight="114.0" prefWidth="211.0" />
+   </children>
+</AnchorPane>
